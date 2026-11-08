@@ -1,0 +1,3 @@
+config load c:\Users\hoang\Documents\PlatformIO\Projects\xecanbang\xecanbang.ioc
+project generate c:\Users\hoang\Documents\PlatformIO\Projects\xecanbang
+exit
