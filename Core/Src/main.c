@@ -55,7 +55,7 @@ typedef enum {
 #define CONTROL_PERIOD_MS   5U
 #define CONTROL_MAX_LATE_MS 15U
 #define MPU_READ_TIMEOUT_MS 4U
-#define FILTER_TAU_S        0.20f
+#define FILTER_TAU_S        0.50f
 #define MPU_MOUNT_OFFSET_DEG 180.0f
 #define FALL_ANGLE_DEG      45.0f
 
@@ -66,13 +66,13 @@ typedef enum {
 #define RIGHT_MOTOR_SIGN     1
 
 // Giá trị khởi điểm, chỉnh lại theo khung xe, motor và mức pin.
-#define REACT_ANGLE_DEG      1.0f
+#define REACT_ANGLE_DEG      0.0f
 #define BALANCE_TRIM_DEG     0.3f
 // Đặt PWM tối đa mỗi khi bộ điều khiển yêu cầu motor quay.
 #define MOTOR_LIMIT        1000
-#define KP                 (0.20f * MOTOR_LIMIT / 3.0f)
-#define KI                  8.0f
-#define KD                  3.0f
+#define KP                 38.0f
+#define KI                  0.0f
+#define KD                  1.5f
 #define INTEGRAL_LIMIT     50.0f
 #define PWM_PRESCALER        3U
 #define PWM_PERIOD         999U
